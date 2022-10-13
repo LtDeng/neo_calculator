@@ -1,0 +1,171 @@
+@font-face {
+  font-family: pixi;
+  src: url(assets/fonts/Silkscreen/Silkscreen-Regular.ttf);
+  src: url(assets/fonts/Silkscreen/Silkscreen-Regular.ttf) format("truetype");
+}
+
+:root {
+  /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: pixi;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --color-dark-primary: #1d1a59;
+  --typography-dark-primary: #8cff9b;
+
+  --color-light-primary: #8cdaff;
+  --typography-light-primary: #0a2a33;
+}
+
+a {
+  font-weight: 500;
+  color: var(--typography-dark-primary);
+  text-decoration: inherit;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: var(--typography-dark-primary);
+    background-color: var(--color-dark-primary);
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--typography-light-primary);
+    background-color: var(--color-light-primary);
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
+
+div,
+button {
+  --size: 5;
+}
+.neo_indent {
+  border-radius: calc(var(--size) * 1px);
+  box-shadow: inset calc(var(--size) * 1px) calc(var(--size) * 1px)
+      calc(var(--size) * 2px) #13113c,
+    inset calc(var(--size) * -1px) calc(var(--size) * -1px)
+      calc(var(--size) * 2px) #272376;
+}
+
+.neo_emboss {
+  border-radius: calc(var(--size) * 1px);
+  background: var(--color-dark-primary);
+  box-shadow: calc(var(--size) * 1px) calc(var(--size) * 1px)
+      calc(var(--size) * 2px) #13113c,
+    calc(var(--size) * -1px) calc(var(--size) * -1px) calc(var(--size) * 2px)
+      #272376;
+}
+
+.neo_dynamic {
+  border-radius: calc(var(--size) * 1px);
+  color: var(--typograpgy-dark-primary);
+  background: var(--color-dark-primary);
+  box-shadow: calc(var(--size) * 1px) calc(var(--size) * 1px)
+      calc(var(--size) * 2px) #13113c,
+    calc(var(--size) * -1px) calc(var(--size) * -1px) calc(var(--size) * 2px)
+      #272376;
+  height: 45px;
+}
+.neo_dynamic:hover {
+  background: linear-gradient(145deg, #1a1750, #1f1c5f);
+}
+.neo_dynamic:active {
+  box-shadow: inset calc(var(--size) * 1px) calc(var(--size) * 1px)
+      calc(var(--size) * 2px) #13113c,
+    inset calc(var(--size) * -1px) calc(var(--size) * -1px)
+      calc(var(--size) * 2px) #272376;
+}
+.neo_dynamic:focus {
+  background: linear-gradient(145deg, #1f1c5f, #1a1750);
+}
+
+@media (prefers-color-scheme: light) {
+  .neo_indent {
+    box-shadow: inset calc(var(--size) * 1px) calc(var(--size) * 1px)
+        calc(var(--size) * 2px) #5e92ab,
+      inset calc(var(--size) * -1px) calc(var(--size) * -1px)
+        calc(var(--size) * 2px) #baffff;
+  }
+
+  .neo_emboss {
+    color: var(--typograpgy-light-primary);
+    background: var(--color-light-primary);
+    box-shadow: calc(var(--size) * 1px) calc(var(--size) * 1px)
+        calc(var(--size) * 2px) #13113c,
+      calc(var(--size) * -1px) calc(var(--size) * -1px) calc(var(--size) * 2px)
+        #baffff;
+  }
+
+  .neo_dynamic {
+    color: var(--typograpgy-light-primary);
+    background: var(--color-light-primary);
+    box-shadow: calc(var(--size) * 1px) calc(var(--size) * 1px)
+        calc(var(--size) * 2px) #13113c,
+      calc(var(--size) * -1px) calc(var(--size) * -1px) calc(var(--size) * 2px)
+        #baffff;
+  }
+  .neo_dynamic:hover {
+    background: linear-gradient(145deg, #7ec4e6, #96e9ff);
+  }
+  .neo_dynamic:active {
+    box-shadow: inset calc(var(--size) * 1px) calc(var(--size) * 1px)
+        calc(var(--size) * 2px) #5e92ab,
+      inset calc(var(--size) * -1px) calc(var(--size) * -1px)
+        calc(var(--size) * 2px) #baffff;
+  }
+  .neo_dynamic:focus {
+    background: linear-gradient(145deg, #96e9ff, #7ec4e6);
+  }
+}
