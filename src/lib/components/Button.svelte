@@ -18,9 +18,4 @@
 </button>
 
 <style lang="scss">
-  button {
-    &:hover {
-      outline: 3px solid red;
-    }
-  }
 </style>

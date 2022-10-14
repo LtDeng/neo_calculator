@@ -93,6 +93,7 @@
   }
 
   .calc_screen {
+    border-radius: 0%;
     font-size: 2rem;
     height: 50px;
     line-height: 50px;
@@ -100,5 +101,6 @@
     padding: 0.5rem;
     overflow-x: hidden;
     width: 260px;
+    box-shadow: inset 5px 5px 5px inherit, inset -5px -5px 5px inherit;
   }
 </style>
